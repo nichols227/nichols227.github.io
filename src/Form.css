@@ -1,0 +1,38 @@
+.formField {
+  width: 40%;
+  margin: 0 5% 20px 5% !important;
+}
+
+.dataGrid {
+  flex: 1;
+  overflow: auto;
+}
+
+.appForm {
+  height: calc(100vh - 40px);
+  display: flex;
+  flex-flow: column;
+}
+
+.formFooter {
+  height: 60px;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.formFields {
+  display: block;
+}
+
+.submitButton {
+  width: 90px;
+}
+
+.footerError {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  color: #F44336;
+  font-weight: bold;
+}
