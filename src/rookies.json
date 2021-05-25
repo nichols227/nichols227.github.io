@@ -1,0 +1,601 @@
+[{
+    "id": 144,
+    "td": "R",
+    "firstName": "Trevor",
+    "lastName": "Lawrence",
+    "team": "Jacksonville Jaguars",
+    "position": "QB"
+  },
+  {
+    "id": 145,
+    "td": "R",
+    "firstName": "Zach",
+    "lastName": "Wilson",
+    "team": "New York Jets",
+    "position": "QB"
+  },
+  {
+    "id": 146,
+    "td": "R",
+    "firstName": "Trey",
+    "lastName": "Lance",
+    "team": "San Francisco 49ers",
+    "position": "QB"
+  },
+  {
+    "id": 147,
+    "td": "R",
+    "firstName": "Kyle",
+    "lastName": "Pitts",
+    "team": "Atlanta Falcons",
+    "position": "TE"
+  },
+  {
+    "id": 148,
+    "td": "R",
+    "firstName": "Ja'Marr",
+    "lastName": "Chase",
+    "team": "Cincinnati Bengals",
+    "position": "WR"
+  },
+  {
+    "id": 149,
+    "td": "R",
+    "firstName": "Jaylen",
+    "lastName": "Waddle",
+    "team": "Miami Dolphins",
+    "position": "WR"
+  },
+  {
+    "id": 150,
+    "td": "R",
+    "firstName": "DeVonta",
+    "lastName": "Smith",
+    "team": "Philadelphia Eagles",
+    "position": "WR"
+  },
+  {
+    "id": 151,
+    "td": "R",
+    "firstName": "Justin",
+    "lastName": "Fields",
+    "team": "Chicago Bears",
+    "position": "QB"
+  },
+  {
+    "id": 152,
+    "td": "R",
+    "firstName": "Mac",
+    "lastName": "Jones",
+    "team": "New England Patriots",
+    "position": "QB"
+  },
+  {
+    "id": 153,
+    "td": "R",
+    "firstName": "Kadarius",
+    "lastName": "Toney",
+    "team": "New York Giants",
+    "position": "WR"
+  },
+  {
+    "id": 154,
+    "td": "R",
+    "firstName": "Najee",
+    "lastName": "Harris",
+    "team": "Pittsburgh Steelers",
+    "position": "RB"
+  },
+  {
+    "id": 155,
+    "td": "R",
+    "firstName": "Travis",
+    "lastName": "Etienne",
+    "team": "Jacksonville Jaguars",
+    "position": "RB"
+  },
+  {
+    "id": 156,
+    "td": "R",
+    "firstName": "Rashod",
+    "lastName": "Bateman",
+    "team": "Baltimore Ravens",
+    "position": "WR"
+  },
+  {
+    "id": 157,
+    "td": "R",
+    "firstName": "Elijah",
+    "lastName": "Moore",
+    "team": "New York Jets",
+    "position": "WR"
+  },
+  {
+    "id": 158,
+    "td": "R",
+    "firstName": "Javonte",
+    "lastName": "Williams",
+    "team": "Denver Broncos",
+    "position": "RB"
+  },
+  {
+    "id": 159,
+    "td": "R",
+    "firstName": "Rondale",
+    "lastName": "Moore",
+    "team": "Arizona Cardinals",
+    "position": "WR"
+  },
+  {
+    "id": 160,
+    "td": "R",
+    "firstName": "Pat",
+    "lastName": "Freiermuth",
+    "team": "Pittsburgh Steelers",
+    "position": "TE"
+  },
+  {
+    "id": 161,
+    "td": "R",
+    "firstName": "D'Wayne",
+    "lastName": "Eskridge",
+    "team": "Seattle Seahawks",
+    "position": "WR"
+  },
+  {
+    "id": 162,
+    "td": "R",
+    "firstName": "Tutu",
+    "lastName": "Atwell",
+    "team": "Los Angeles Rams",
+    "position": "WR"
+  },
+  {
+    "id": 163,
+    "td": "R",
+    "firstName": "Terrace",
+    "lastName": "Marshall Jr",
+    "team": "Carolina Panthers",
+    "position": "WR"
+  },
+  {
+    "id": 164,
+    "td": "R",
+    "firstName": "Kyle",
+    "lastName": "Trask",
+    "team": "Tampa Bay Buccaneers",
+    "position": "QB"
+  },
+  {
+    "id": 165,
+    "td": "R",
+    "firstName": "Kellen",
+    "lastName": "Mond",
+    "team": "Minnesota Vikings",
+    "position": "QB"
+  },
+  {
+    "id": 166,
+    "td": "R",
+    "firstName": "Davis",
+    "lastName": "Mills",
+    "team": "Houston Texans",
+    "position": "QB"
+  },
+  {
+    "id": 167,
+    "td": "R",
+    "firstName": "Josh",
+    "lastName": "Palmer",
+    "team": "Los Angeles Chargers",
+    "position": "WR"
+  },
+  {
+    "id": 168,
+    "td": "R",
+    "firstName": "Hunter",
+    "lastName": "Long",
+    "team": "Miami Dolphins",
+    "position": "TE"
+  },
+  {
+    "id": 169,
+    "td": "R",
+    "firstName": "Dyami",
+    "lastName": "Brown",
+    "team": "Washington Football Team",
+    "position": "WR"
+  },
+  {
+    "id": 170,
+    "td": "R",
+    "firstName": "Tommy",
+    "lastName": "Tremble",
+    "team": "Carolina Panthers",
+    "position": "TE"
+  },
+  {
+    "id": 171,
+    "td": "R",
+    "firstName": "Amari",
+    "lastName": "Rodgers",
+    "team": "Green Bay Packers",
+    "position": "WR"
+  },
+  {
+    "id": 172,
+    "td": "R",
+    "firstName": "Trey",
+    "lastName": "Sermon",
+    "team": "San Francisco 49ers",
+    "position": "RB"
+  },
+  {
+    "id": 173,
+    "td": "R",
+    "firstName": "Nico",
+    "lastName": "Collins",
+    "team": "Houston Texans",
+    "position": "WR"
+  },
+  {
+    "id": 174,
+    "td": "R",
+    "firstName": "Anthony",
+    "lastName": "Schwartz",
+    "team": "Cleveland Browns",
+    "position": "WR"
+  },
+  {
+    "id": 175,
+    "td": "R",
+    "firstName": "Tre'",
+    "lastName": "McKitty",
+    "team": "Los Angeles Chargers",
+    "position": "TE"
+  },
+  {
+    "id": 176,
+    "td": "R",
+    "firstName": "Michael",
+    "lastName": "Carter",
+    "team": "New York Jets",
+    "position": "RB"
+  },
+  {
+    "id": 177,
+    "td": "R",
+    "firstName": "Dez",
+    "lastName": "Fitzpatrick",
+    "team": "Tennessee Titans",
+    "position": "WR"
+  },
+  {
+    "id": 178,
+    "td": "R",
+    "firstName": "Amon-Ra",
+    "lastName": "St. Brown",
+    "team": "Detroit Lions",
+    "position": "WR"
+  },
+  {
+    "id": 179,
+    "td": "R",
+    "firstName": "Kene",
+    "lastName": "Nwangwu",
+    "team": "Minnesota Vikings",
+    "position": "RB"
+  },
+  {
+    "id": 180,
+    "td": "R",
+    "firstName": "Rhamondre",
+    "lastName": "Stevenson",
+    "team": "New England Patriots",
+    "position": "RB"
+  },
+  {
+    "id": 181,
+    "td": "R",
+    "firstName": "John",
+    "lastName": "Bates",
+    "team": "Washington Football Team",
+    "position": "TE"
+  },
+  {
+    "id": 182,
+    "td": "R",
+    "firstName": "Chuba",
+    "lastName": "Hubbard",
+    "team": "Carolina Panthers",
+    "position": "RB"
+  },
+  {
+    "id": 183,
+    "td": "R",
+    "firstName": "Kylen",
+    "lastName": "Granson",
+    "team": "Indianapolis Colts",
+    "position": "TE"
+  },
+  {
+    "id": 184,
+    "td": "R",
+    "firstName": "Jaelon",
+    "lastName": "Darden",
+    "team": "Tampa Bay Buccaneers",
+    "position": "WR"
+  },
+  {
+    "id": 185,
+    "td": "R",
+    "firstName": "Tylan",
+    "lastName": "Wallace",
+    "team": "Baltimore Ravens",
+    "position": "WR"
+  },
+  {
+    "id": 186,
+    "td": "R",
+    "firstName": "Ian",
+    "lastName": "Book",
+    "team": "New Orleans Saints",
+    "position": "QB"
+  },
+  {
+    "id": 187,
+    "td": "R",
+    "firstName": "Jacob",
+    "lastName": "Harris",
+    "team": "Los Angeles Rams",
+    "position": "WR"
+  },
+  {
+    "id": 188,
+    "td": "R",
+    "firstName": "Luke",
+    "lastName": "Farrell",
+    "team": "Jacksonville Jaguars",
+    "position": "TE"
+  },
+  {
+    "id": 189,
+    "td": "R",
+    "firstName": "Brevin",
+    "lastName": "Jordan",
+    "team": "Houston Texans",
+    "position": "TE"
+  },
+  {
+    "id": 190,
+    "td": "R",
+    "firstName": "Kenneth",
+    "lastName": "Gainwell",
+    "team": "Philadelphia Eagles",
+    "position": "RB"
+  },
+  {
+    "id": 191,
+    "td": "R",
+    "firstName": "Ihmir",
+    "lastName": "Smith-Marsette",
+    "team": "Minnesota Vikings",
+    "position": "WR"
+  },
+  {
+    "id": 192,
+    "td": "R",
+    "firstName": "Noah",
+    "lastName": "Gray",
+    "team": "Kansas City Chiefs",
+    "position": "TE"
+  },
+  {
+    "id": 193,
+    "td": "R",
+    "firstName": "Zach",
+    "lastName": "Davidson",
+    "team": "Minnesota Vikings",
+    "position": "TE"
+  },
+  {
+    "id": 194,
+    "td": "R",
+    "firstName": "Simi",
+    "lastName": "Fehoko",
+    "team": "Dallas Cowboys",
+    "position": "WR"
+  },
+  {
+    "id": 195,
+    "td": "R",
+    "firstName": "Cornell",
+    "lastName": "Powell",
+    "team": "Kansas City Chiefs",
+    "position": "WR"
+  },
+  {
+    "id": 196,
+    "td": "R",
+    "firstName": "Frank",
+    "lastName": "Darby",
+    "team": "Atlanta Falcons",
+    "position": "WR"
+  },
+  {
+    "id": 197,
+    "td": "R",
+    "firstName": "Elijah",
+    "lastName": "Mitchell",
+    "team": "San Francisco 49ers",
+    "position": "RB"
+  },
+  {
+    "id": 198,
+    "td": "R",
+    "firstName": "Gary",
+    "lastName": "Brightwell",
+    "team": "New York Giants",
+    "position": "RB"
+  },
+  {
+    "id": 199,
+    "td": "R",
+    "firstName": "Larry",
+    "lastName": "Rountree III",
+    "team": "Los Angeles Chargers",
+    "position": "RB"
+  },
+  {
+    "id": 200,
+    "td": "R",
+    "firstName": "Chris",
+    "lastName": "Evans",
+    "team": "Cincinnati Bengals",
+    "position": "RB"
+  },
+  {
+    "id": 201,
+    "td": "R",
+    "firstName": "Marquez",
+    "lastName": "Stevenson",
+    "team": "Buffalo Bills",
+    "position": "WR"
+  },
+  {
+    "id": 202,
+    "td": "R",
+    "firstName": "Shi",
+    "lastName": "Smith",
+    "team": "Carolina Panthers",
+    "position": "WR"
+  },
+  {
+    "id": 203,
+    "td": "R",
+    "firstName": "Racey",
+    "lastName": "McMath",
+    "team": "Tennessee Titans",
+    "position": "WR"
+  },
+  {
+    "id": 204,
+    "td": "R",
+    "firstName": "Jalen",
+    "lastName": "Camp",
+    "team": "Jacksonville Jaguars",
+    "position": "WR"
+  },
+  {
+    "id": 205,
+    "td": "R",
+    "firstName": "Demetric",
+    "lastName": "Felton",
+    "team": "Cleveland Browns",
+    "position": "WR"
+  },
+  {
+    "id": 206,
+    "td": "R",
+    "firstName": "Khalil",
+    "lastName": "Herbert",
+    "team": "Chicago Bears",
+    "position": "RB"
+  },
+  {
+    "id": 207,
+    "td": "R",
+    "firstName": "Sam",
+    "lastName": "Ehlinger",
+    "team": "Indianapolis Colts",
+    "position": "QB"
+  },
+  {
+    "id": 208,
+    "td": "R",
+    "firstName": "Seth",
+    "lastName": "Williams",
+    "team": "Denver Broncos",
+    "position": "WR"
+  },
+  {
+    "id": 209,
+    "td": "R",
+    "firstName": "Dazz",
+    "lastName": "Newsome",
+    "team": "Chicago Bears",
+    "position": "WR"
+  },
+  {
+    "id": 210,
+    "td": "R",
+    "firstName": "Mike",
+    "lastName": "Strachan",
+    "team": "Indianapolis Colts",
+    "position": "WR"
+  },
+  {
+    "id": 211,
+    "td": "R",
+    "firstName": "Jake",
+    "lastName": "Funk",
+    "team": "Los Angeles Rams",
+    "position": "RB"
+  },
+  {
+    "id": 212,
+    "td": "R",
+    "firstName": "Tre",
+    "lastName": "Nixon",
+    "team": "New England Patriots",
+    "position": "WR"
+  },
+  {
+    "id": 213,
+    "td": "R",
+    "firstName": "Gerrid",
+    "lastName": "Doaks",
+    "team": "Miami Dolphins",
+    "position": "RB"
+  },
+  {
+    "id": 214,
+    "td": "R",
+    "firstName": "Ben",
+    "lastName": "Skowronek",
+    "team": "Los Angeles Rams",
+    "position": "WR"
+  },
+  {
+    "id": 215,
+    "td": "R",
+    "firstName": "Kawaan",
+    "lastName": "Baker",
+    "team": "New Orleans Saints",
+    "position": "WR"
+  },
+  {
+    "id": 216,
+    "td": "R",
+    "firstName": "Kylin",
+    "lastName": "Hill",
+    "team": "Green Bay Packers",
+    "position": "RB"
+  },
+  {
+    "id": 217,
+    "td": "R",
+    "firstName": "Jermar",
+    "lastName": "Jefferson",
+    "team": "Detroit Lions",
+    "position": "RB"
+  },
+  {
+    "id": 218,
+    "td": "R",
+    "firstName": "Dax",
+    "lastName": "Milne",
+    "team": "Washington Football Team",
+    "position": "WR"
+  }
+]
