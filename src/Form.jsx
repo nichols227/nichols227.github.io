@@ -91,12 +91,13 @@ const Form = (props) => {
        sortedRows = sortedRows.sort((a, b) => a[rookieSortColumn].localeCompare(b[rookieSortColumn]));
        break;
      case 'td':
+     default:
        sortedRows = sortedRows.sort((a, b) => a[rookieSortColumn] - b[rookieSortColumn]);
        break;
    }
 
    return rookieSortDirection === 'DESC' ? sortedRows.reverse() : sortedRows;
-  }, [rookieJSON, rookieSortColumn, rookieSortDirection]);
+  }, [rookieSortColumn, rookieSortDirection]);
 
   const sortedPlayerRows = useMemo(() => {
     if (playerSortDirection === 'NONE') return playerJSON;
@@ -111,12 +112,13 @@ const Form = (props) => {
        sortedRows = sortedRows.sort((a, b) => a[playerSortColumn].localeCompare(b[playerSortColumn]));
        break;
      case 'td':
+     default:
        sortedRows = sortedRows.sort((a, b) => a[playerSortColumn] - b[playerSortColumn]);
        break;
    }
 
    return playerSortDirection === 'DESC' ? sortedRows.reverse() : sortedRows;
- }, [playerJSON, playerSortColumn, playerSortDirection]);
+ }, [playerSortColumn, playerSortDirection]);
 
   const handlePlayerSort = useCallback((columnKey, direction) => {
     setPlayerSort([columnKey, direction]);
