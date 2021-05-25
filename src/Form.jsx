@@ -1,5 +1,5 @@
 import TextField from '@material-ui/core/TextField';
-import {useState, useMemo} from 'react'
+import {useState, useMemo, useCallback} from 'react'
 import './Form.css'
 import playerJSON from './players.json';
 import rookieJSON from './rookies.json';
@@ -67,6 +67,8 @@ const Form = (props) => {
   const [players, setPlayers] = useState(new Set());
   const [rookies, setRookies] = useState(new Set());
   const [playerError, setPlayerError] = useState('');
+  const [[playerSortColumn, playerSortDirection], setPlayerSort] = useState(['lastName', 'NONE']);
+  const [[rookieSortColumn, rookieSortDirection], setRookieSort] = useState(['lastName', 'NONE']);
 
   const selectedTotal = useMemo(() => {
     let tds = 0;
@@ -74,7 +76,55 @@ const Form = (props) => {
       tds += playerJSON[playerId-1].td;
     }
     return tds;
-  }, [players])
+  }, [players]);
+
+  const sortedRookieRows = useMemo(() => {
+    if (rookieSortDirection === 'NONE') return rookieJSON;
+
+   let sortedRows = [...rookieJSON];
+
+   switch (rookieSortColumn) {
+     case 'firstName':
+     case 'lastName':
+     case 'position':
+     case 'team':
+       sortedRows = sortedRows.sort((a, b) => a[rookieSortColumn].localeCompare(b[rookieSortColumn]));
+       break;
+     case 'td':
+       sortedRows = sortedRows.sort((a, b) => a[rookieSortColumn] - b[rookieSortColumn]);
+       break;
+   }
+
+   return rookieSortDirection === 'DESC' ? sortedRows.reverse() : sortedRows;
+  }, [rookieJSON, rookieSortColumn, rookieSortDirection]);
+
+  const sortedPlayerRows = useMemo(() => {
+    if (playerSortDirection === 'NONE') return playerJSON;
+
+   let sortedRows = [...playerJSON];
+
+   switch (playerSortColumn) {
+     case 'firstName':
+     case 'lastName':
+     case 'position':
+     case 'team':
+       sortedRows = sortedRows.sort((a, b) => a[playerSortColumn].localeCompare(b[playerSortColumn]));
+       break;
+     case 'td':
+       sortedRows = sortedRows.sort((a, b) => a[playerSortColumn] - b[playerSortColumn]);
+       break;
+   }
+
+   return playerSortDirection === 'DESC' ? sortedRows.reverse() : sortedRows;
+ }, [playerJSON, playerSortColumn, playerSortDirection]);
+
+  const handlePlayerSort = useCallback((columnKey, direction) => {
+    setPlayerSort([columnKey, direction]);
+  }, []);
+
+  const handleRookieSort = useCallback((columnKey, direction) => {
+    setRookieSort([columnKey, direction]);
+  }, []);
 
   const onFormSubmit = () => {
     let error = false;
@@ -123,13 +173,13 @@ const Form = (props) => {
     urlencoded.append("entry.2028247391", lastName);
     urlencoded.append("entry.840246629", email);
     urlencoded.append("entry.922791203", teamName);
-    urlencoded.append("entry.242737050", getName(playerJSON[playerArray[0] -1]));
-    urlencoded.append("entry.1346375085",getName(playerJSON[playerArray[1] -1]));
-    urlencoded.append("entry.890699852", getName(playerJSON[playerArray[2] -1]));
-    urlencoded.append("entry.1138431561", getName(playerJSON[playerArray[3] -1]));
-    urlencoded.append("entry.1311230266", getName(playerJSON[playerArray[4] -1]));
-    urlencoded.append("entry.1216679688", getName(playerJSON[playerArray[5] -1]));
-    urlencoded.append("entry.1816541943", getName(rookieJSON[rookieArray[0] - 143]));
+    urlencoded.append("entry.242737050", getName(playerJSON[playerArray[0] - 1]));
+    urlencoded.append("entry.1346375085",getName(playerJSON[playerArray[1] - 1]));
+    urlencoded.append("entry.890699852", getName(playerJSON[playerArray[2] - 1]));
+    urlencoded.append("entry.1138431561", getName(playerJSON[playerArray[3] - 1]));
+    urlencoded.append("entry.1311230266", getName(playerJSON[playerArray[4] - 1]));
+    urlencoded.append("entry.1216679688", getName(playerJSON[playerArray[5] - 1]));
+    urlencoded.append("entry.1816541943", getName(rookieJSON[rookieArray[0] - 144]));
 
     var requestOptions = {
       method: 'POST',
@@ -216,7 +266,7 @@ const Form = (props) => {
       </div>
       <div className="dataGridWrapper">
         <DataGrid
-        rows={playerJSON}
+        rows={sortedPlayerRows}
         columns={columns}
         rowKeyGetter={row => row.id}
         selectedRows={players}
@@ -225,6 +275,9 @@ const Form = (props) => {
           setPlayers(players);
         }}
         className="playerDataGrid"
+        sortColumn={playerSortColumn}
+        sortDirection={playerSortDirection}
+        onSort={handlePlayerSort}
          />
       </div>
 
@@ -233,7 +286,7 @@ const Form = (props) => {
       </div>
       <div className="rookieGridWrapper">
         <DataGrid
-        rows={rookieJSON}
+        rows={sortedRookieRows}
         columns={rookieColumns}
         rowKeyGetter={row => row.id}
         selectedRows={rookies}
@@ -242,6 +295,9 @@ const Form = (props) => {
           setRookies(rookies);
         }}
         className="rookieDataGrid"
+        sortColumn={rookieSortColumn}
+        sortDirection={rookieSortDirection}
+        onSort={handleRookieSort}
         />
       </div>
 
