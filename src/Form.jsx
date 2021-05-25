@@ -16,6 +16,8 @@ const stopEnterOnKeyDown = (e) => {
   }
 }
 
+const getName = player => `${player.firstName} ${player.lastName}`;
+
 const columns = [
   SelectColumn,
   { key: 'firstName', name: 'First name', sortable: true },
@@ -113,17 +115,28 @@ const Form = (props) => {
 
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
-    myHeaders.append("Cookie", "S=spreadsheet_forms=iOix59PVJQrBql1NCvI-UO1ysUrZHuFG4jrJTmF2l4k; NID=216=m6o3-RIDhOz0TNdnW2M0wHsysX01AGQ49IlUt-0aXWfvOryMb1GxcUs-RRivHc611Uu78d2NmvUqQVpNoYcmdVGnHLj1tMZ0-U3olCPwq7dti-mTLbDTRc2cD0O8Mm8Ff0teUAXmDgiyIz_Jb-q2QfKf62Pufs4B32h2NFVnWLk");
 
+    const playerArray = Array.from(players);
+    const rookieArray = Array.from(rookies);
     var urlencoded = new URLSearchParams();
     urlencoded.append("entry.101112653", firstName);
+    urlencoded.append("entry.2028247391", lastName);
+    urlencoded.append("entry.840246629", email);
+    urlencoded.append("entry.922791203", teamName);
+    urlencoded.append("entry.242737050", getName(playerJSON[playerArray[0] -1]));
+    urlencoded.append("entry.1346375085",getName(playerJSON[playerArray[1] -1]));
+    urlencoded.append("entry.890699852", getName(playerJSON[playerArray[2] -1]));
+    urlencoded.append("entry.1138431561", getName(playerJSON[playerArray[3] -1]));
+    urlencoded.append("entry.1311230266", getName(playerJSON[playerArray[4] -1]));
+    urlencoded.append("entry.1216679688", getName(playerJSON[playerArray[5] -1]));
+    urlencoded.append("entry.1816541943", getName(rookieJSON[rookieArray[0] - 143]));
 
     var requestOptions = {
       method: 'POST',
       headers: myHeaders,
       body: urlencoded,
       redirect: 'follow',
-      mode: 'cors',
+      mode: 'no-cors',
       credentials: 'include'
     };
 

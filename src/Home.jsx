@@ -9,7 +9,7 @@ function Home() {
       <header className="App-header">
         Pylon Pick 'Em
       </header>
-      {submitted ? <div /> : <Form setSubmitted={setSubmitted} />}
+      {submitted ? <div>Thank you for your submission!</div> : <Form setSubmitted={setSubmitted} />}
     </div>
   );
 }
