@@ -122,7 +122,9 @@ const Form = (props) => {
       method: 'POST',
       headers: myHeaders,
       body: urlencoded,
-      redirect: 'follow'
+      redirect: 'follow',
+      mode: 'cors',
+      credentials: 'include'
     };
 
     fetch("https://docs.google.com/forms/d/e/1FAIpQLScObPyuHrMe66iKhHbEeQZ11Sr3moTk5Y69wLBppjB9-hyTqA/formResponse", requestOptions)
