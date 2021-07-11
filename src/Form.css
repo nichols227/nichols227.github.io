@@ -13,7 +13,7 @@
 }
 
 .appForm {
-  height: calc(100vh - 40px);
+  height: calc(100vh - 60px);
   display: flex;
   flex-flow: column;
   text-align: left;
@@ -53,4 +53,19 @@
 
 .rookieText {
   margin-top: 10px;
+}
+
+.selectedText > :first-child {
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 650px) {
+  .selectedText, .returningText {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .selectedText > :first-child {
+    margin-right: 0;
+  }
 }

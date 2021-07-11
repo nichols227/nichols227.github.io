@@ -263,8 +263,14 @@ const Form = (props) => {
       </div>
 
       <div className="playerText">
-        <span><b>Returning Players</b> (Pick {PLAYER_COUNT}, Max {MAX_TOUCHDOWNS} combined)</span>
-        <span><b>Selected TD Total:</b> {selectedTotal}</span>
+        <div className="returningText">
+          <span><b>Returning Players</b> </span>
+          <span>(Pick {PLAYER_COUNT}, Max {MAX_TOUCHDOWNS} combined)</span>
+        </div>
+        <div className="selectedText">
+          <span><b>Selected TD Total:</b> {selectedTotal}</span>
+          <span><b>Selected Players:</b> {players.size}/6</span>
+        </div>
       </div>
       <div className="dataGridWrapper">
         <DataGrid
